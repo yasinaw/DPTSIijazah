@@ -43,7 +43,7 @@
 					<td class="span3">&nbsp;NAMA</td>
 					<td class="span3">
 						<div class="input-control text bg-cyan" data-role="input-control">
-							<span class="fg-white"><?echo $nama; ?></span>
+							<span class="fg-white"><?php echo $nama; ?></span>
 							<input type="hidden" name="input_nama" value="<?echo $nama; ?>">
 						</div>
 					</td>
@@ -52,8 +52,8 @@
 					<td><label>&nbsp;NRP</label></td>
 					<td>
 						<div class="input-control text bg-cyan" data-role="input-control">							
-							<span class="fg-white">&nbsp;<?echo $nrp;?></span>
-							<input type="hidden" name="input_nrp" value="<?echo $nrp;?>">
+							<span class="fg-white">&nbsp;<?php echo $nrp;?></span>
+							<input type="hidden" name="input_nrp" value="<?php echo $nrp;?>">
 						</div>
 					</td>
 				</tr>
@@ -61,8 +61,8 @@
 					<td>&nbsp;PERIODE WISUDA</td>
 					<td>
 						<div class="input-control text" data-role="input-control">							
-							<span><?echo $periode;?></span>
-							<input type="hidden" name="input_periode" value="<?echo $periode;?>">
+							<span><?php echo $periode;?></span>
+							<input type="hidden" name="input_periode" value="<?php echo $periode;?>">
 						</div>
 					</td>
 				</tr>
@@ -70,7 +70,7 @@
 					<td>&nbsp;PROSESI WISUDA</td>
 					<td>
 						<div class="span1 input-control text" data-role="input-control">	
-							<input type="text" name='input_prosesi' value='<?echo $prosesi;?>'>
+							<input type="text" name='input_prosesi' value='<?php echo $prosesi;?>'>
 							<button class="btn-clear" tabindex="-1" type="button"></button>
 						</div>
 					</td>

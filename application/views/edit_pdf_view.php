@@ -1,6 +1,6 @@
 <html>	
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.dataTables.js"></script>
 	<title>Edit Data Buku Wisuda</title>
 <head>
@@ -8,13 +8,13 @@
 <body class="metro">	
 	<!-- HEADER -->
 	<header class="bg-dark" >
-		<?php echo $this->load->view('header_baak');?>
+		<?php $this->load->view('header_baak');?>
 	</header>
 	
 	<div class="grid">
 		<div class="row">
 			<div class="span3">
-				<?php echo $this->load->view('sidebar_baak');?>
+				<?php $this->load->view('sidebar_baak');?>
 			</div>
 			<div class="span10">
 			<!-- content -->

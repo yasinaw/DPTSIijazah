@@ -1,6 +1,6 @@
 <html>	
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.dataTables.js"></script>
 	<!-- DATEPICKER -->
 	<script type="text/javascript" src="<?php echo base_url();?>assets/js/metro/metro-calendar.js"></script>
@@ -14,11 +14,11 @@
 		<div class="row">
 			<!-- HEADER -->
 			<header class="bg-dark" >
-				<?php echo $this->load->view('header_baak');?>
+				<?php $this->load->view('header_baak');?>
 			</header>
 			<!-- SIDEBAR -->
 			<div class="span3">
-				<?php echo $this->load->view('sidebar_baak');?>
+				<?php $this->load->view('sidebar_baak');?>
 			</div>
 			<div class="span8">				
 				<table class="table striped">

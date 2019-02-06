@@ -1,18 +1,18 @@
 <html>	
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	<title>Mahasiswa Sisipan</title>
 <head>
 
 <body class="metro">	
 	<!-- HEADER -->
 	<header class="bg-dark" >
-		<?php echo $this->load->view('kursi/header_kursi');?>
+		<?php $this->load->view('kursi/header_kursi');?>
 	</header>
 	<div class="grid">
 		<div class="row">
 			<div class="span3">
-				<?php echo $this->load->view('kursi/sidebar_kursi');?>
+				<?php $this->load->view('kursi/sidebar_kursi');?>
 			</div>
 			<div class="span12">
 			<!-- content -->
@@ -44,7 +44,7 @@
 					<td class="span3">&nbsp;NAMA</td>
 					<td class="span3">
 						<div class="input-control text bg-cyan" data-role="input-control">
-							<span class="fg-white"><?echo $nama; ?></span>
+							<span class="fg-white"><?php echo $nama; ?></span>
 						</div>
 					</td>
 				</tr>
@@ -52,7 +52,7 @@
 					<td><label>&nbsp;NRP</label></td>
 					<td>
 						<div class="input-control text bg-cyan" data-role="input-control">							
-							<span class="fg-white">&nbsp;<?echo $nrp;?></span>
+							<span class="fg-white">&nbsp;<?php echo $nrp;?></span>
 						</div>
 					</td>
 				</tr>
@@ -60,7 +60,7 @@
 					<td>&nbsp;PERIODE WISUDA</td>
 					<td>
 						<div class="input-control text" data-role="input-control">							
-							<span><?echo $periode;?></span>
+							<span><?php echo $periode;?></span>
 						</div>
 					</td>
 				</tr>
@@ -68,7 +68,7 @@
 					<td>&nbsp;PROSESI WISUDA</td>
 					<td>
 						<div class="span1 input-control text" data-role="input-control">	
-							<span><?echo $prosesi;?></span>
+							<span><?php echo $prosesi;?></span>
 							<button class="btn-clear" tabindex="-1" type="button"></button>
 						</div>
 					</td>

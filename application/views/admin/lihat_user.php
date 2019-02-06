@@ -1,6 +1,6 @@
 <html>	
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.dataTables.js"></script>
 	
 	<title>Data Pengguna</title>
@@ -11,7 +11,7 @@
 		<div class="row">
 			<!-- HEADER -->
 			<header class="bg-dark" >
-				<?php echo $this->load->view('admin/header_admin');?>
+				<?php $this->load->view('admin/header_admin');?>
 			</header>
 			<!-- SIDEBAR -->
 			<div class="span3">

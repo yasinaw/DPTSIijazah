@@ -2,7 +2,7 @@
 <head>
 	<title>Login</title>
 		
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	
 	<style type="text/css">
 		#label { display:block;}
@@ -19,7 +19,7 @@
 			<tr>
 				<td>
 					<p class="header">
-						<img src='<?echo base_url()?>/inc/logo_ITS.jpg' width='150px' height='100px'>
+						<img src='<?php echo base_url()?>/inc/logo_ITS.jpg' width='150px' height='100px'>
 						SIM WISUDA <sup>2014</sup>
 					</p>
                     <fieldset>

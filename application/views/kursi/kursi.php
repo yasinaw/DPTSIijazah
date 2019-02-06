@@ -1,11 +1,11 @@
 <html>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 <head>
 	<title>Generate Kursi Wisuda</title>
 <head>
 <body class="metro">	
 <header class="bg-dark" >
-	<?php echo $this->load->view('kursi/header_kursi');?>
+	<?php $this->load->view('kursi/header_kursi');?>
 </header>
 <?php
 	$this->load->helper('form');

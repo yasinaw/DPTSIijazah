@@ -2,7 +2,7 @@
 <head>
 	<title>Cetak Buku Wisuda</title>
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	
 	<!-- DATEPICKER -->
 	<script type="text/javascript" src="<?php echo base_url();?>assets/js/metro/metro-calendar.js"></script>

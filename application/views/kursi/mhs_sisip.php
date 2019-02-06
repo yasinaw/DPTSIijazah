@@ -1,6 +1,6 @@
 <html>	
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.dataTables.js"></script>
 	<title>Edit Data Buku Wisuda</title>
 <head>
@@ -8,13 +8,13 @@
 <body class="metro">	
 	<!-- HEADER -->
 	<header class="bg-dark" >
-		<?php echo $this->load->view('kursi/header_kursi');?>
+		<?php $this->load->view('kursi/header_kursi');?>
 	</header>
 	
 	<div class="grid">
 		<div class="row">
 			<div class="span3">
-				<?php echo $this->load->view('kursi/sidebar_kursi');?>
+				<?php $this->load->view('kursi/sidebar_kursi');?>
 			</div>
 			<div class="span10">
 			<!-- content -->
@@ -45,8 +45,8 @@
 					<td class="span3">&nbsp;NAMA</td>
 					<td class="span3">
 						<div class="input-control text bg-cyan" data-role="input-control">
-							<span class="fg-white"><?echo $nama; ?></span>
-							<input type="hidden" name="input_nama" value="<?echo $nama; ?>">
+							<span class="fg-white"><?php echo $nama; ?></span>
+							<input type="hidden" name="input_nama" value="<?php echo $nama; ?>">
 						</div>
 					</td>
 				</tr>
@@ -54,8 +54,8 @@
 					<td><label>&nbsp;NRP</label></td>
 					<td>
 						<div class="input-control text bg-cyan" data-role="input-control">							
-							<span class="fg-white">&nbsp;<?echo $nrp;?></span>
-							<input type="hidden" name="input_nrp" value="<?echo $nrp;?>">
+							<span class="fg-white">&nbsp;<?php echo $nrp;?></span>
+							<input type="hidden" name="input_nrp" value="<?php echo $nrp;?>">
 						</div>
 					</td>
 				</tr>
@@ -63,8 +63,8 @@
 					<td>&nbsp;PERIODE WISUDA</td>
 					<td>
 						<div class="input-control text" data-role="input-control">							
-							<span><?echo $periode;?></span>
-							<input type="hidden" name="input_periode" value="<?echo $periode;?>">
+							<span><?php echo $periode;?></span>
+							<input type="hidden" name="input_periode" value="<?php echo $periode;?>">
 						</div>
 					</td>
 				</tr>
@@ -72,7 +72,7 @@
 					<td>&nbsp;PROSESI WISUDA</td>
 					<td>
 						<div class="span1 input-control text" data-role="input-control">	
-							<input type="text" name='input_prosesi' value='<?echo $prosesi;?>'>
+							<input type="text" name='input_prosesi' value='<?php echo $prosesi;?>'>
 							<button class="btn-clear" tabindex="-1" type="button"></button>
 						</div>						
 					</td>

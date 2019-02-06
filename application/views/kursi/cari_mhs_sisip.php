@@ -1,6 +1,6 @@
 <html>	
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.dataTables.js"></script>
 	<title>Cari Mahasiswa</title>
 <head>
@@ -8,13 +8,13 @@
 <body class="metro">	
 	<!-- HEADER -->
 	<header class="bg-dark" >
-		<?php echo $this->load->view('kursi/header_kursi');?>
+		<?php $this->load->view('kursi/header_kursi');?>
 	</header>
 	
 	<div class="grid">
 		<div class="row">
 			<div class="span3">
-				<?php echo $this->load->view('kursi/sidebar_kursi');?>
+				<?php $this->load->view('kursi/sidebar_kursi');?>
 			</div>
 			<div class="span10">
 			<!-- content -->
@@ -44,7 +44,7 @@
 						<tr>
 							<td class="span2"></td>
 							<td colspan="2">
-								<? if(isset($check_database)){
+								<?php if(isset($check_database)){
 									echo '<p class="item-title fg-red">'.$check_database.'</p>';
 								}?>
 							</td>

@@ -1,6 +1,6 @@
 <html>	
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.dataTables.js"></script>
 	<title>Edit Data Pengguna</title>
 <head>
@@ -8,7 +8,7 @@
 <body class="metro">	
 	<!-- HEADER -->
 	<header class="bg-dark" >
-		<?php echo $this->load->view('admin/header_admin');?>
+		<?php $this->load->view('admin/header_admin');?>
 	</header>
 	
 	<div class="grid">

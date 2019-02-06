@@ -1,13 +1,13 @@
 <html>
 	
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	
 	<title>Cetak Buku Wisuda</title>
 <head>
 <body class="metro">	
 	<header class="bg-dark" >
-		<?php echo $this->load->view('header_baak');?>
+		<?php $this->load->view('header_baak');?>
 	</header>
 	
 <?php

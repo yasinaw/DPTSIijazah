@@ -1,6 +1,6 @@
 <html>	
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery.dataTables.js"></script>
 	<title>Profil</title>
 <head>
@@ -10,13 +10,13 @@
 	<header class="bg-dark" >
 		<?php
 			if($akses=='BUKU'){
-				echo $this->load->view('header_baak');
+				$this->load->view('header_baak');
 			}
 			else if($akses	=='KURSI'){
-				echo $this->load->view('kursi/header_kursi');
+				$this->load->view('kursi/header_kursi');
 			}
 			else if($akses	=='ADMIN'){
-				echo $this->load->view('admin/header_admin');
+				$this->load->view('admin/header_admin');
 			}
 			
 		?>
@@ -27,10 +27,10 @@
 			<div class="span3">
 				<?php 
 					if($akses=='BUKU'){
-						echo $this->load->view('sidebar_baak');
+						$this->load->view('sidebar_baak');
 					}
 					else if($akses=='KURSI'){
-						echo $this->load->view('kursi/sidebar_kursi');
+						$this->load->view('kursi/sidebar_kursi');
 					}
 					
 				?>
@@ -39,7 +39,7 @@
 			<!-- content -->
 				<h1>
                     <a href="javascript:history.back()"><i class="icon-arrow-left-3 fg-darker smaller"></i></a>
-                    Profil<small class="on-right"><?echo $nama;?></small>
+                    Profil<small class="on-right"><?php echo $nama;?></small>
                 </h1>
 				<legend></legend>	
 				
@@ -53,8 +53,8 @@
 					<td class="span3">&nbsp;Username</td>
 					<td class="span3">
 						<div class="input-control text" data-role="input-control">
-							<span><?echo $username; ?></span>
-							<input type="hidden" name="input_user" value="<?echo $username; ?>">
+							<span><?php echo $username; ?></span>
+							<input type="hidden" name="input_user" value="<?php echo $username; ?>">
 						</div>
 					</td>
 				</tr>
@@ -62,8 +62,8 @@
 					<td><label>&nbsp;Nama Pegguna</label></td>
 					<td>
 						<div class="input-control text" data-role="input-control">							
-							<span><?echo $nama;?></span>
-							<input type="hidden" name="input_nrp" value="<?echo $nama;?>">
+							<span><?php echo $nama;?></span>
+							<input type="hidden" name="input_nrp" value="<?php echo $nama;?>">
 						</div>
 					</td>
 				</tr>
@@ -71,8 +71,8 @@
 					<td>&nbsp;Hak Akses</td>
 					<td>
 						<div class="input-control text" data-role="input-control">							
-							<span><?echo $akses;?></span>
-							<input type="hidden" name="input_periode" value="<?echo $akses;?>">
+							<span><?php echo $akses;?></span>
+							<input type="hidden" name="input_periode" value="<?php echo $akses;?>">
 						</div>
 					</td>
 				</tr>

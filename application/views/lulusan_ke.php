@@ -2,7 +2,7 @@
 	<link rel="stylesheet" type="text/css" href="/coba/inc/Metro-UI-CSS-master/css/metro-bootstrap.css">
     
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	<title>Data Lulusan Ke</title>
 <head>
 
@@ -11,11 +11,11 @@
 		<div class="row">
 			<!-- HEADER -->
 			<header class="bg-dark" >
-				<?php echo $this->load->view('header_baak');?>
+				<?php $this->load->view('header_baak');?>
 			</header>
 			<!-- SIDEBAR -->
 			<div class="span3">
-				<?php echo $this->load->view('sidebar_baak');?>
+				<?php $this->load->view('sidebar_baak');?>
 			</div>
 
 			<div class="span8">

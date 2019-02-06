@@ -37,7 +37,7 @@
 				<h3>Periode Wisuda</h3>
 				<!--select name='periodewisuda' onchange="window.location='mhs?periodewisuda='+this.value"-->
 				<select name='periodewisuda'>
-			<?PHP		
+			<?php		
 				$ctrtgl='';
 				echo "<option value=''>Pilih Periode</option>";
 				for ($i = 1; $i <= $ctr; $i++) 

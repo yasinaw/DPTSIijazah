@@ -1,13 +1,13 @@
 <html>	
 <head>
-	<?php echo $this->load->view('css_js');?>
+	<?php $this->load->view('css_js');?>
 	<title>Cari Kursi Wisuda</title>
 <head>
 
 <body class="metro">	
 	<!-- HEADER -->
 	<header class="bg-dark" >
-		<?php echo $this->load->view('mhs/header_mhs');?>
+		<?php $this->load->view('mhs/header_mhs');?>
 	</header>
 	<center>
 	<div class="grid">
@@ -39,7 +39,7 @@
 						<tr>
 							<td class="span2"></td>
 							<td colspan="2">
-								<? if(isset($check_database)){
+								<?php if(isset($check_database)){
 									echo '<p class="item-title fg-red">'.$check_database.'</p>';
 								}?>
 							</td>
